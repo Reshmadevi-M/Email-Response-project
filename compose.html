@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compose Email</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Email Response System</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="compose.html">Compose</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Compose Email</h2>
+    <form id="emailForm">
+      <label>Subject:<br><input type="text" id="subject" required></label><br>
+      <label>Content:<br><textarea id="content" rows="5" required></textarea></label><br>
+      <label>Tone:<br>
+        <select id="tone">
+          <option value="Formal">Formal</option>
+          <option value="Casual">Casual</option>
+          <option value="Friendly">Friendly</option>
+        </select>
+      </label><br>
+      <button type="submit">Generate Response</button>
+    </form>
+    <section id="responseContainer" class="hidden">
+      <h3>Generated Response:</h3>
+      <p id="responseText"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
